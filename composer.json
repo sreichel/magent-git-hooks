@@ -1,0 +1,22 @@
+{
+  "name": "zlik/git-hooks",
+  "description": "Git Hooks",
+  "homepage": "https://github.com/zlik/git-hooks",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alex Zarichnyi",
+      "homepage": "http://zlik.github.com",
+      "role": "Maintainer"
+    }
+  ],
+  "require": {
+    "magento-ecg/coding-standard": "~1.2",
+    "squizlabs/php_codesniffer": "~2.3"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bash shell/git-hooks/setup"
+    ]
+  }
+}
